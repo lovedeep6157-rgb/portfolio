@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lovedeep Sandhu — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise-overlay"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-text">LS</span>
+      <span class="logo-bracket">]</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#academics" class="nav-link">Academics</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="theme-icon">◐</span>
+    </button>
+  </nav>
+
+  <!-- ===== HOME ===== -->
+  <section id="home" class="section home-section">
+
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="home-grid">
+      <div class="home-left">
+        <div class="greeting-tag">&lt;hello world /&gt;</div>
+        <h1 class="hero-name">
+          <span class="name-line">Lovedeep</span>
+          <span class="name-line accent">Sandhu</span>
+        </h1>
+        <div class="tagline">
+          Computer Engineering Student
+        </div>
+        <div class="typing-wrapper">
+          <span class="typing-prefix">$ ./run </span>
+          <span class="typing-text" id="typingText"></span>
+          <span class="cursor">_</span>
+        </div>
+
+        <!-- Stats row -->
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num">1</span>
+            <span class="hero-stat-label">Project Built</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">8.34</span>
+            <span class="hero-stat-label">Current CGPA</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">10+</span>
+            <span class="hero-stat-label">Skills Learning</span>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+
+        <!-- Social links -->
+        <div class="hero-socials">
+          <a href="https://linkedin.com/in/lovedeepsingh-sandhu-8aaa80403" target="_blank" class="hero-social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lovedeep6157@gmail.com" target="_blank" class="hero-social-link" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-.9.732-1.636 1.636-1.636h.749L12 11.73l9.615-7.909h.749A1.636 1.636 0 0124 5.457z"/></svg>
+          </a>
+          <a href="https://github.com/lovedeep6157-rgb" target="_blank" class="hero-social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: visual panel -->
+      <div class="home-right hero-visual">
+        <div class="hero-ring-wrap">
+          <div class="hero-ring ring-1"></div>
+          <div class="hero-ring ring-2"></div>
+          <div class="hero-ring ring-3"></div>
+          <div class="hero-avatar-box">
+            <div class="hero-avatar-initials">LS</div>
+            <div class="hero-avatar-status">
+              <span class="status-dot"></span> Available
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating tech badges -->
+        <div class="hero-badge badge-html">HTML5</div>
+        <div class="hero-badge badge-css">CSS3</div>
+        <div class="hero-badge badge-js">JS</div>
+        <div class="hero-badge badge-react">React</div>
+        <div class="hero-badge badge-python">Python</div>
+        <div class="hero-badge badge-git">Git</div>
+      </div>
+
+    </div>
+
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about-section">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-card glass-card">
+        <div class="about-avatar">
+          <div class="avatar-ring"></div>
+          <div class="avatar-inner">LS</div>
+        </div>
+        <div class="about-status">
+          <span class="status-dot"></span> Open to opportunities
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="about-intro">
+          I'm a <strong>Frontend Developer</strong> and <strong></strong>Computer Engineering student</strong> with hands-on experience building responsive, user-friendly web applications using <em>React.js</em>, <em>Tailwind CSS</em>, <em>HTML</em>, and <em>CSS</em>. Comfortable working across the full stack with basic backend knowledge.
+        </p>
+        <p class="about-body">
+          Passionate about clean UI design, writing maintainable code, and continuously improving through real-world projects. I've participated in the <strong>Smart India Hackathon</strong> and <strong>CVM Hackathon</strong>, which sharpened my ability to build under pressure and collaborate in teams.
+        </p>
+
+        <!-- Skills snapshot -->
+        <div class="about-skills-row">
+          <span class="about-skill-pill">HTML</span>
+          <span class="about-skill-pill">CSS</span>
+          <span class="about-skill-pill">JavaScript</span>
+          <span class="about-skill-pill">Python</span>
+          <span class="about-skill-pill">React</span>
+          <span class="about-skill-pill">Tailwind CSS</span>
+        </div>
+
+        <div class="about-facts">
+          <div class="fact">
+            <span class="fact-icon">🎓</span>
+            <div>
+              <strong>Computer Engineering</strong>
+              <small>Current Student</small>
+            </div>
+          </div>
+          <div class="fact">
+            <span class="fact-icon">💻</span>
+            <div>
+              <strong>Frontend Developer</strong>
+              <small>React · Tailwind · JS</small>
+            </div>
+          </div>
+          <div class="fact">
+            <span class="fact-icon">🏆</span>
+            <div>
+              <strong>Smart India Hackathon</strong>
+              <small>Participant</small>
+            </div>
+          </div>
+          <div class="fact">
+            <span class="fact-icon">⚡</span>
+            <div>
+              <strong>CVM Hackathon</strong>
+              <small>Participant</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Skills</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-level-note">
+      <span class="skills-level-icon">📌</span>
+      All skills are at a <strong>foundational / basic level</strong> — actively learning and building with each of these technologies.
+    </div>
+
+    <!-- ── CATEGORY 1: FRONTEND DEVELOPMENT ── -->
+    <div class="skills-category">
+      <div class="skills-category-header">
+        <span class="skills-cat-icon">🎨</span>
+        <h3 class="skills-cat-title">Frontend Development</h3>
+        <div class="skills-cat-line"></div>
+      </div>
+      <div class="skills-new-grid">
+
+        <div class="skill-new-card glass-card" data-delay="0">
+          <div class="skill-logo html">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3l2.1 23.4L16 29l8.9-2.6L27 3H5z" fill="#E44D26"/><path d="M16 27.1l7.2-2L25 6H16v21.1z" fill="#F16529"/><path d="M16 13.5h-4.1l-.3-3.2H16V7.1H8.2l.1 1.2.9 10.4H16v-5.2zm0 8.7l-.1.1-3.4-.9-.2-2.4H9.1l.4 4.8 6.4 1.8.1-.1v-3.3z" fill="#EBEBEB"/><path d="M16 13.5v5.2h3.8l-.4 4.1-3.4.9v3.3l6.4-1.8.1-.7.7-8.1.1-1.2H16zm0-6.4v3.2h7.4l.1-1.2.2-2H16z" fill="#fff"/></svg>
+          </div>
+          <div class="skill-new-info">
+            <div class="skill-new-top">
+              <span class="skill-new-name">HTML5</span>
+              <span class="skill-level-badge">Basic</span>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="30"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-new-card glass-card" data-delay="80">
+          <div class="skill-logo css">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3l2.1 23.4L16 29l8.9-2.6L27 3H5z" fill="#1572B6"/><path d="M16 27.1l7.2-2L25 6H16v21.1z" fill="#33A9DC"/><path d="M16 13.5H11.9l-.3-3.2H16V7.1H8.2l.9 10.4H16v-4zm0 8.8l-3.4-.9-.2-2.4H9.2l.4 4.8 6.4 1.8V22.3z" fill="#fff"/><path d="M16 13.5v4h3.5l-.3 3.8-3.2.9v3.1l6.4-1.8.8-9.1H16zm0-6.4v3.2h7.2l.2-3.2H16z" fill="#EBEBEB"/></svg>
+          </div>
+          <div class="skill-new-info">
+            <div class="skill-new-top">
+              <span class="skill-new-name">CSS3</span>
+              <span class="skill-level-badge">Basic</span>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="30"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-new-card glass-card" data-delay="160">
+          <div class="skill-logo js">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="32" height="32" rx="4" fill="#F7DF1E"/><path d="M9.5 25.3l2.3-1.4c.4.8.8 1.4 1.7 1.4.9 0 1.4-.3 1.4-1.7V14h2.8v9.7c0 2.8-1.6 4-4 4-2.1 0-3.4-1.1-4.2-2.4zM19.1 25l2.3-1.4c.6 1 1.4 1.7 2.7 1.7 1.2 0 1.9-.6 1.9-1.4 0-1-.7-1.3-2-1.9l-.7-.3c-2-.8-3.3-1.9-3.3-4.1 0-2 1.5-3.6 4-3.6 1.7 0 3 .6 3.9 2.2l-2.2 1.4c-.5-.8-1-1.1-1.7-1.1-.8 0-1.3.5-1.3 1.1 0 .8.5 1.1 1.7 1.6l.7.3c2.3 1 3.7 2 3.7 4.3 0 2.4-1.9 3.8-4.5 3.8-2.5 0-4.1-1.2-4.9-2.6z" fill="#000"/></svg>
+          </div>
+          <div class="skill-new-info">
+            <div class="skill-new-top">
+              <span class="skill-new-name">JavaScript</span>
+              <span class="skill-level-badge">Basic</span>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="30"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-new-card glass-card" data-delay="240">
+          <div class="skill-logo react">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="2.8" fill="#61DAFB"/><ellipse cx="16" cy="16" rx="12" ry="4.5" stroke="#61DAFB" stroke-width="1.5" fill="none"/><ellipse cx="16" cy="16" rx="12" ry="4.5" stroke="#61DAFB" stroke-width="1.5" fill="none" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="12" ry="4.5" stroke="#61DAFB" stroke-width="1.5" fill="none" transform="rotate(120 16 16)"/></svg>
+          </div>
+          <div class="skill-new-info">
+            <div class="skill-new-top">
+              <span class="skill-new-name">React</span>
+              <span class="skill-level-badge">Basic</span>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="30"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-new-card glass-card" data-delay="320">
+          <div class="skill-logo tailwind">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 7c-3.6 0-5.8 1.8-6.7 5.3 1.3-1.8 2.9-2.4 4.7-2 1 .3 1.7 1 2.5 1.8 1.3 1.3 2.7 2.8 5.9 2.8 3.6 0 5.8-1.8 6.7-5.3-1.3 1.8-2.9 2.4-4.7 2-1-.3-1.7-1-2.5-1.8C20.6 8.5 19.2 7 16 7zm-6.7 8c-3.6 0-5.8 1.8-6.7 5.3 1.3-1.8 2.9-2.4 4.7-2 1 .3 1.7 1 2.5 1.8 1.3 1.3 2.7 2.8 5.9 2.8 3.6 0 5.8-1.8 6.7-5.3-1.3 1.8-2.9 2.4-4.7 2-1-.3-1.7-1-2.5-1.8C13.9 16.5 12.5 15 9.3 15z" fill="#38BDF8"/></svg>
+          </div>
+          <div class="skill-new-info">
+            <div class="skill-new-top">
+              <span class="skill-new-name">Tailwind CSS</span>
+              <span class="skill-level-badge">Basic</span>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="30"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-new-card glass-card" data-delay="400">
+          <div class="skill-logo python">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9 3C11 3 11.3 5.1 11.3 5.1V7.2h4.7v.7H8.7S5 7.4 5 12.4s3.2 4.8 3.2 4.8H10v-2.3s-.1-3.2 3.1-3.2h5.4s3 .1 3-2.9V5.9S22 3 15.9 3zm-3 1.7c.5 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .5-1 1-1z" fill="#3776AB"/><path d="M16.1 29c4.9 0 4.6-2.1 4.6-2.1v-2.1h-4.7v-.7h7.3s3.7.4 3.7-4.6-3.2-4.8-3.2-4.8H22v2.3s.1 3.2-3.1 3.2h-5.4s-3-.1-3 2.9v4.9s-.5 2.9 5.6 2.9zm3-1.7c-.5 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.5 1-1 1z" fill="#FFD43B"/></svg>
+          </div>
+          <div class="skill-new-info">
+            <div class="skill-new-top">
+              <span class="skill-new-name">Python</span>
+              <span class="skill-level-badge">Basic</span>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="30"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── CATEGORY 2: WEB DEVELOPMENT ── -->
+    <div class="skills-category">
+      <div class="skills-category-header">
+        <span class="skills-cat-icon">🌐</span>
+        <h3 class="skills-cat-title">Web Development</h3>
+        <div class="skills-cat-line"></div>
+      </div>
+      <div class="skills-new-grid">
+
+        <div class="skill-new-card glass-card" data-delay="0">
+          <div class="skill-logo responsive">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="6" width="20" height="14" rx="2" stroke="#a78bfa" stroke-width="1.8" fill="none"/><rect x="23" y="10" width="7" height="10" rx="1.5" stroke="#a78bfa" stroke-width="1.8" fill="none"/><path d="M8 24h8M12 20v4" stroke="#a78bfa" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <div class="skill-new-info">
+            <div class="skill-new-top">
+              <span class="skill-new-name">Responsive Design</span>
+              <span class="skill-level-badge">Basic</span>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="30"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-new-card glass-card" data-delay="80">
+          <div class="skill-logo github">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 3C8.8 3 3 8.9 3 16.2c0 5.8 3.8 10.8 9 12.5.7.1.9-.3.9-.6v-2.2c-3.7.8-4.5-1.8-4.5-1.8-.6-1.6-1.5-2-1.5-2-1.2-.8.1-.8.1-.8 1.4.1 2.1 1.4 2.1 1.4 1.2 2.1 3.2 1.5 4 1.1.1-.9.5-1.5.9-1.8-3-.3-6.1-1.5-6.1-6.7 0-1.5.5-2.7 1.4-3.6-.1-.3-.6-1.7.1-3.6 0 0 1.1-.4 3.7 1.4a12.8 12.8 0 016.8 0c2.6-1.7 3.7-1.4 3.7-1.4.7 1.9.3 3.3.1 3.6.9.9 1.4 2.1 1.4 3.6 0 5.2-3.1 6.3-6.1 6.7.5.4.9 1.2.9 2.5v3.7c0 .4.2.7.9.6 5.2-1.7 9-6.7 9-12.5C29 8.9 23.2 3 16 3z" fill="currentColor"/></svg>
+          </div>
+          <div class="skill-new-info">
+            <div class="skill-new-top">
+              <span class="skill-new-name">Git & GitHub</span>
+              <span class="skill-level-badge">Basic</span>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="30"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-new-card glass-card" data-delay="160">
+          <div class="skill-logo frontend">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="26" height="18" rx="2" stroke="#34d399" stroke-width="1.8" fill="none"/><path d="M3 22h26M12 27h8" stroke="#34d399" stroke-width="1.8" stroke-linecap="round"/><path d="M10 12l4 4-4 4M16 20h6" stroke="#34d399" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="skill-new-info">
+            <div class="skill-new-top">
+              <span class="skill-new-name">Frontend Development</span>
+              <span class="skill-level-badge">Basic</span>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="30"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-new-card glass-card" data-delay="240">
+          <div class="skill-logo ui">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="24" height="24" rx="3" stroke="#f472b6" stroke-width="1.8" fill="none"/><rect x="8" y="8" width="7" height="7" rx="1.5" fill="#f472b6" opacity=".4"/><rect x="17" y="8" width="7" height="3" rx="1" fill="#f472b6" opacity=".6"/><rect x="17" y="13" width="7" height="2" rx="1" fill="#f472b6" opacity=".4"/><rect x="8" y="18" width="16" height="2" rx="1" fill="#f472b6" opacity=".5"/><rect x="8" y="22" width="10" height="2" rx="1" fill="#f472b6" opacity=".3"/></svg>
+          </div>
+          <div class="skill-new-info">
+            <div class="skill-new-top">
+              <span class="skill-new-name">UI Development</span>
+              <span class="skill-level-badge">Basic</span>
+            </div>
+            <div class="skill-bar-wrap"><div class="skill-bar" data-width="30"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card glass-card featured">
+        <div class="project-header">
+          <div class="project-num">P01</div>
+          <div class="project-status wip">In Progress</div>
+        </div>
+        <div class="project-icon">💳</div>
+        <h3 class="project-title">Online Billing & Invoice System</h3>
+        <p class="project-desc">A comprehensive billing and invoicing platform with client management, invoice generation, payment tracking, and automated reminders. Currently in active development.</p>
+
+        <!-- Project Image Gallery -->
+        <div class="project-gallery">
+          <div class="gallery-main">
+            <img src="online_billing.jpeg" alt="Online Billing Screenshot 1" class="gallery-img active" id="galleryMain" />
+          </div>
+          <div class="gallery-thumbs">
+            <img src="online_billing.jpeg"  alt="Thumb 1" class="gallery-thumb active" onclick="switchImg(this, 'online_billing.jpeg')" />
+            <img src="online_billing1.jpeg" alt="Thumb 2" class="gallery-thumb" onclick="switchImg(this, 'online_billing1.jpeg')" />
+            <img src="online_billing2.jpeg" alt="Thumb 3" class="gallery-thumb" onclick="switchImg(this, 'online_billing2.jpeg')" />
+            <img src="online_billing3.jpeg" alt="Thumb 4" class="gallery-thumb" onclick="switchImg(this, 'online_billing3.jpeg')" />
+            <img src="online_billing4.jpeg" alt="Thumb 5" class="gallery-thumb" onclick="switchImg(this, 'online_billing4.jpeg')" />
+          </div>
+        </div>
+
+        <div class="project-tech">
+          <span>Web Dev</span><span>Python</span><span>Database</span><span>API</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">View Details →</a>
+        </div>
+        <div class="project-badge">Current Focus</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section experience-section">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-role">Web Development Intern</h3>
+            </div>
+            <div class="exp-meta">
+              <span class="exp-duration">15 Days</span>
+              <span class="exp-type">Internship</span>
+            </div>
+          </div>
+          <p class="exp-desc">
+            Completed a <strong>Web Development Internship</strong> focused on building and styling responsive web pages, working with real project requirements and delivering functional UI components.
+          </p>
+          <div class="exp-achievements">
+            <div class="achievement">
+              <span>✓</span> Built responsive web pages using HTML, CSS, and JavaScript
+            </div>
+            <div class="achievement">
+              <span>✓</span> Developed and styled UI components following design guidelines
+            </div>
+            <div class="achievement">
+              <span>✓</span> Gained hands-on experience in real-world web development workflow
+            </div>
+          </div>
+          <div class="exp-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Download -->
+    <div class="resume-cta">
+      <div class="resume-cta-inner glass-card">
+        <div class="resume-cta-left">
+          <div class="resume-icon">📄</div>
+          <div>
+            <div class="resume-cta-title">My Resume</div>
+            <div class="resume-cta-sub">View my full experience, skills & academics in one place</div>
+          </div>
+        </div>
+        <a href="Lovedeep_Resume.pdf" download="Lovedeep_Sandhu_Resume.pdf" class="btn btn-primary resume-download-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== ACADEMICS ===== -->
+  <section id="academics" class="section academics-section">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">Academics</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="academics-grid">
+
+      <!-- 10th Grade -->
+      <div class="academic-card glass-card">
+        <div class="academic-icon">🏫</div>
+        <div class="academic-badge">10th Grade</div>
+        <h3 class="academic-title">Secondary Education</h3>
+        <div class="academic-details">
+          <div class="academic-row">
+            <span class="academic-label">School</span>
+            <span class="academic-value">St. Xavier's English Medium High School</span>
+          </div>
+          <div class="academic-row">
+            <span class="academic-label">Board</span>
+            <span class="academic-value">Gujarat Board</span>
+          </div>
+          <div class="academic-row">
+            <span class="academic-label">Result</span>
+            <span class="academic-value academic-score">67%</span>
+          </div>
+        </div>
+        <div class="academic-bar-wrap">
+          <div class="academic-bar" data-width="30"></div>
+        </div>
+      </div>
+
+      <!-- Diploma -->
+      <div class="academic-card glass-card">
+        <div class="academic-icon">📜</div>
+        <div class="academic-badge diploma">Diploma</div>
+        <h3 class="academic-title">Computer Engineering</h3>
+        <div class="academic-details">
+          <div class="academic-row">
+            <span class="academic-label">College</span>
+            <span class="academic-value">Bhailalbhai & Bhikhabhai Institute of Technology</span>
+          </div>
+          <div class="academic-row">
+            <span class="academic-label">Branch</span>
+            <span class="academic-value">Computer Engineering</span>
+          </div>
+          <div class="academic-row">
+            <span class="academic-label">CGPA</span>
+            <span class="academic-value academic-score">8.22 / 10</span>
+          </div>
+        </div>
+        <div class="academic-bar-wrap">
+          <div class="academic-bar" data-width="82.2"></div>
+        </div>
+        <!-- Diploma Certificate Photo -->
+        <div class="academic-cert" onclick="openCert()">
+          <img src="diploma_certi.jpeg" alt="Diploma Certificate" class="cert-thumb" />
+          <span class="cert-overlay">🔍 View Certificate</span>
+        </div>
+      </div>
+
+      <!-- Current Degree -->
+      <div class="academic-card glass-card current">
+        <div class="academic-icon">🎓</div>
+        <div class="academic-badge current-badge">Current Degree</div>
+        <h3 class="academic-title">Computer Engineering</h3>
+        <div class="academic-details">
+          <div class="academic-row">
+            <span class="academic-label">College</span>
+            <span class="academic-value">Madhuben & Bhanubhai Patel Institute of Technology</span>
+          </div>
+          <div class="academic-row">
+            <span class="academic-label">Course</span>
+            <span class="academic-value">Computer Engineering</span>
+          </div>
+          <div class="academic-row">
+            <span class="academic-label">CGPA</span>
+            <span class="academic-value academic-score">8.34 / 10</span>
+          </div>
+        </div>
+        <div class="academic-bar-wrap">
+          <div class="academic-bar" data-width="83.4"></div>
+        </div>
+        <div class="academic-status-tag">
+          <span class="status-dot"></span> Currently Pursuing
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certificate Lightbox -->
+  <div class="cert-lightbox" id="certLightbox" onclick="closeCert()">
+    <div class="cert-lightbox-inner">
+      <img src="diploma_certi.jpeg" alt="Diploma Certificate" />
+      <button class="cert-close" onclick="closeCert()">✕</button>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2 class="section-title">Contact</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="contact-intro">Got a project, internship, or just want to talk tech? I'm always open to connect.</p>
+        <div class="contact-links">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lovedeep6157@gmail.com" target="_blank" class="contact-item glass-card">
+            <span class="contact-icon">📧</span>
+            <div>
+              <small>Email</small>
+              <strong>lovedeep6157@gmail.com</strong>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/lovedeepsingh-sandhu-8aaa80403" target="_blank" class="contact-item glass-card">
+            <span class="contact-icon">🔗</span>
+            <div>
+              <small>LinkedIn</small>
+              <strong>linkedin.com/in/lovedeepsingh-sandhu-8aaa80403</strong>
+            </div>
+          </a>
+          <a href="https://github.com/lovedeep6157-rgb" target="_blank" class="contact-item glass-card">
+            <span class="contact-icon">🐙</span>
+            <div>
+              <small>GitHub</small>
+              <strong>github.com/lovedeep6157-rgb</strong>
+            </div>
+          </a>
+        </div>
+        <div class="contact-tagline">
+          <span class="mono">&gt; Currently available for internships &amp; collaborations</span>
+        </div>
+      </div>
+
+      <form class="contact-form glass-card" id="contactForm">
+        <div class="form-group">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="femail">Email</label>
+          <input type="email" id="femail" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="fsubject">Subject</label>
+          <input type="text" id="fsubject" placeholder="Project Collaboration / Internship..." />
+        </div>
+        <div class="form-group">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" rows="5" placeholder="Tell me about your idea..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">
+          <span class="btn-text">Send Message</span>
+          <span class="btn-icon">→</span>
+        </button>
+        <div class="form-success" id="formSuccess">✓ Message sent! I'll get back to you soon.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="mono">&lt;LovedeepSandhu /&gt;</span>
+        <small>Computer Engineering Student · AI/ML · Cybersecurity</small>
+      </div>
+      <div class="footer-center">
+        <span>Built with ❤️ and vanilla JS</span>
+      </div>
+      <div class="footer-right">
+        <a href="#home" class="footer-link">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
