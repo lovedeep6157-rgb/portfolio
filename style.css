@@ -719,6 +719,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .slide-arrow.left { left: 8px; }
   .slide-arrow.right { right: 8px; }
 }
+<<<<<<< HEAD
 
 /* ── PROJECT GALLERY ── */
 .project-gallery {
@@ -1466,3 +1467,5 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   background: var(--accent-glow);
   transform: translateY(-2px);
 }
+=======
+>>>>>>> 0b6faa98b473e8132ab68dac4fc60c5b4ae358a6

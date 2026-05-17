@@ -73,8 +73,15 @@ document.getElementById('scrollTop').addEventListener('click', () => {
 
 // ── TYPING ANIMATION ──
 const phrases = [
+<<<<<<< HEAD
   'Web Developer',
   'Always Evolving',
+=======
+  'AI/ML Learner',
+  'Web Developer',
+  'Creative Problem Solver',
+  'Code Unnati Graduate',
+>>>>>>> 0b6faa98b473e8132ab68dac4fc60c5b4ae358a6
 ];
 let pIdx = 0, cIdx = 0, deleting = false;
 const typingEl = document.getElementById('typingText');
@@ -99,7 +106,32 @@ function type() {
 }
 type();
 
+<<<<<<< HEAD
 // ── SLIDESHOW (removed) ──
+=======
+// ── SLIDESHOW ──
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+let current = 0, autoSlide;
+
+function goTo(n) {
+  slides[current].classList.remove('active');
+  dots[current].classList.remove('active');
+  current = (n + slides.length) % slides.length;
+  slides[current].classList.add('active');
+  dots[current].classList.add('active');
+}
+
+function resetAuto() {
+  clearInterval(autoSlide);
+  autoSlide = setInterval(() => goTo(current + 1), 4000);
+}
+
+document.getElementById('nextSlide').addEventListener('click', () => { goTo(current + 1); resetAuto(); });
+document.getElementById('prevSlide').addEventListener('click', () => { goTo(current - 1); resetAuto(); });
+dots.forEach((d, i) => d.addEventListener('click', () => { goTo(i); resetAuto(); }));
+resetAuto();
+>>>>>>> 0b6faa98b473e8132ab68dac4fc60c5b4ae358a6
 
 // ── INTERSECTION OBSERVER: REVEAL ──
 const revealEls = document.querySelectorAll('.glass-card, .section-header, .tech-stack, .timeline');
@@ -118,7 +150,11 @@ revealEls.forEach(el => {
 });
 
 // ── SKILL CARDS REVEAL + BAR ANIMATE ──
+<<<<<<< HEAD
 const skillCards = document.querySelectorAll('.skill-card, .skill-new-card');
+=======
+const skillCards = document.querySelectorAll('.skill-card');
+>>>>>>> 0b6faa98b473e8132ab68dac4fc60c5b4ae358a6
 const skillObs = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -193,6 +229,7 @@ homeSection.addEventListener('mousemove', (e) => {
   homeSection.style.setProperty('--mx', `${x}px`);
   homeSection.style.setProperty('--my', `${y}px`);
 });
+<<<<<<< HEAD
 
 // ── PROJECT GALLERY ──
 function switchImg(thumb, src) {
@@ -229,3 +266,5 @@ function closeCert() {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeCert();
 });
+=======
+>>>>>>> 0b6faa98b473e8132ab68dac4fc60c5b4ae358a6
